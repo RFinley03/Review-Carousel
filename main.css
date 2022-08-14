@@ -68,6 +68,7 @@ img {
 }
 
 .header .underline {
+    margin: 0.5em auto;
     border-bottom: 3px solid #0fbcf9;
     width: 3rem;
 }
