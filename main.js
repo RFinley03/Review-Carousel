@@ -3,13 +3,13 @@ const reviews = [{
     name: "Susan Smith",
     job: "web developer",
     img: "images/01.jpg",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo totam eius sequi? Sequi possimus nisi deserunt libero explicabo ea, eveniet itaque rem deleniti! Qui voluptatum ducimus ea ex sunt."
+    text: "A true professional from beginning to end. It was a pleasure working with you."
 }, {
     id: 2,
     name: "Jackson Paris",
     job: "web designer",
     img: "images/02.jpg",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo totam eius sequi? Sequi possimus nisi deserunt libero explicabo ea, eveniet itaque rem deleniti! Qui voluptatum ducimus ea ex sunt."
+    text: "He really did a great job helping me overhaul my website. Now it looks and feels amazing, and sales are up. Thank you so much!"
 }, {
     id: 1,
     name: "Sierra Herrera",
@@ -33,13 +33,7 @@ const text = document.querySelector('#js-text');
 let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
-    setInterval(() => {
-        currentItem++;
-        if (currentItem > reviews.length - 1) {
-            currentItem = 0;
-        }
-        showPerson(currentItem);
-    }, 30000);
+    showPerson();
 });
 
 showPerson = () => {
